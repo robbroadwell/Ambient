@@ -170,6 +170,7 @@ class ViewController: UIViewController {
             stormPlayer = try AVAudioPlayer(contentsOf: url)
             guard let player = stormPlayer else { return }
             
+            player.numberOfLoops = -1
             player.play()
             
         } catch let error {
@@ -187,6 +188,7 @@ class ViewController: UIViewController {
             firePlayer = try AVAudioPlayer(contentsOf: url)
             guard let player = firePlayer else { return }
             
+            player.numberOfLoops = -1
             player.play()
             
         } catch let error {
@@ -204,6 +206,7 @@ class ViewController: UIViewController {
             musicPlayer = try AVAudioPlayer(contentsOf: url)
             guard let player = musicPlayer else { return }
             
+            player.numberOfLoops = -1
             player.play()
             
         } catch let error {
