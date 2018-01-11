@@ -15,11 +15,18 @@ enum Control {
 }
 
 class ViewController: UIViewController {
+    
+    var knob: Knob!
 
     @IBOutlet weak var knobPlaceholder: UIView!
     
-    var knob: Knob!
     var activeControl: Control = Control.fire {
+        didSet {
+            updateUI()
+        }
+    }
+    
+    var playing: Bool = true {
         didSet {
             updateUI()
         }
@@ -31,21 +38,30 @@ class ViewController: UIViewController {
     
     func updateUI() {
         switch activeControl {
+            
         case Control.storm:
             stormButton.tintColor = .red
             fireButton.tintColor = .black
             musicButton.tintColor = .black
             knob.value = stormVolume
+            
         case Control.fire:
             stormButton.tintColor = .black
             fireButton.tintColor = .red
             musicButton.tintColor = .black
             knob.value = fireVolume
+            
         case Control.music:
             stormButton.tintColor = .black
             fireButton.tintColor = .black
             musicButton.tintColor = .red
             knob.value = musicVolume
+        }
+        
+        if playing {
+            playButton.tintColor = .red
+        } else {
+            playButton.tintColor = .black
         }
     }
     
@@ -86,6 +102,10 @@ class ViewController: UIViewController {
         activeControl = .music
     }
     
+    @IBOutlet weak var playButton: UIButton!
+    @IBAction func playButtonPressed(_ sender: UIButton) {
+        playing = !playing
+    }
     
 }
 

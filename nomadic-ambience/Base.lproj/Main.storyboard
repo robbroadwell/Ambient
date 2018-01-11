@@ -52,12 +52,21 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A3y-eV-Qh3" userLabel="Play Button">
+                                <rect key="frame" x="163" y="393" width="49" height="30"/>
+                                <state key="normal" title="playing"/>
+                                <connections>
+                                    <action selector="playButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tMd-jy-rxQ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="A3y-eV-Qh3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AUS-Tf-GOY"/>
                             <constraint firstItem="zym-iF-GaD" firstAttribute="top" secondItem="ul0-sg-WpQ" secondAttribute="bottom" constant="20" id="Jym-gr-Q0Y"/>
                             <constraint firstItem="zym-iF-GaD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Qbx-eY-KnT"/>
                             <constraint firstItem="ul0-sg-WpQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="db5-d3-tEL"/>
+                            <constraint firstItem="A3y-eV-Qh3" firstAttribute="top" secondItem="zym-iF-GaD" secondAttribute="bottom" constant="10" id="iLZ-qV-XQq"/>
                             <constraint firstItem="zym-iF-GaD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qsY-nl-OZb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -66,6 +75,7 @@
                         <outlet property="fireButton" destination="Jj5-4C-muE" id="usa-Hc-PpW"/>
                         <outlet property="knobPlaceholder" destination="zym-iF-GaD" id="VYW-e9-j2z"/>
                         <outlet property="musicButton" destination="DrR-ON-Yan" id="KnR-cE-orq"/>
+                        <outlet property="playButton" destination="A3y-eV-Qh3" id="ILx-Iz-sJX"/>
                         <outlet property="stormButton" destination="rhs-7b-faF" id="AdH-X6-ljG"/>
                     </connections>
                 </viewController>
