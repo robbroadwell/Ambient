@@ -10,16 +10,26 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var knobPlaceholder: UIView!
+    
+    var knob: Knob!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        knob = Knob(frame: knobPlaceholder.bounds)
+        knob.addTarget(self, action: #selector(knobValueChanged(knob:)), for: .allEvents)
+        knob.isUserInteractionEnabled = true
+        knobPlaceholder.addSubview(knob)
+        
+        view.tintColor = UIColor.red
+        
+        knob.value = 0.5
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    @objc func knobValueChanged(knob: Knob) {
+        print(knob.value)
     }
-
-
+    
 }
 
