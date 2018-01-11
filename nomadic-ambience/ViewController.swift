@@ -164,7 +164,7 @@ class ViewController: UIViewController {
         guard let url = Bundle.main.url(forResource: "storm", withExtension: "mp3") else { return }
         
         do {
-            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryAmbient)
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback, with: AVAudioSessionCategoryOptions.mixWithOthers)
             try AVAudioSession.sharedInstance().setActive(true)
             
             stormPlayer = try AVAudioPlayer(contentsOf: url)
@@ -181,7 +181,7 @@ class ViewController: UIViewController {
         guard let url = Bundle.main.url(forResource: "fire", withExtension: "mp3") else { return }
         
         do {
-            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryAmbient)
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback, with: AVAudioSessionCategoryOptions.mixWithOthers)
             try AVAudioSession.sharedInstance().setActive(true)
             
             firePlayer = try AVAudioPlayer(contentsOf: url)
@@ -198,7 +198,7 @@ class ViewController: UIViewController {
         guard let url = Bundle.main.url(forResource: "music", withExtension: "mp3") else { return }
         
         do {
-            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryAmbient)
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback, with: AVAudioSessionCategoryOptions.mixWithOthers)
             try AVAudioSession.sharedInstance().setActive(true)
             
             musicPlayer = try AVAudioPlayer(contentsOf: url)
