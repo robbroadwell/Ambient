@@ -26,16 +26,47 @@
                                     <constraint firstAttribute="height" constant="100" id="gBa-r1-E8U"/>
                                 </constraints>
                             </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ul0-sg-WpQ">
+                                <rect key="frame" x="122" y="233" width="131" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rhs-7b-faF">
+                                        <rect key="frame" x="0.0" y="0.0" width="40" height="30"/>
+                                        <state key="normal" title="storm"/>
+                                        <connections>
+                                            <action selector="stormButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5gu-sI-rCu"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jj5-4C-muE">
+                                        <rect key="frame" x="50" y="0.0" width="30" height="30"/>
+                                        <state key="normal" title="fire"/>
+                                        <connections>
+                                            <action selector="fireButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KN6-fP-bn9"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DrR-ON-Yan">
+                                        <rect key="frame" x="90" y="0.0" width="41" height="30"/>
+                                        <state key="normal" title="music"/>
+                                        <connections>
+                                            <action selector="musicButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oNq-2v-Yk5"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="zym-iF-GaD" firstAttribute="top" secondItem="ul0-sg-WpQ" secondAttribute="bottom" constant="20" id="Jym-gr-Q0Y"/>
                             <constraint firstItem="zym-iF-GaD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Qbx-eY-KnT"/>
+                            <constraint firstItem="ul0-sg-WpQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="db5-d3-tEL"/>
                             <constraint firstItem="zym-iF-GaD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qsY-nl-OZb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="fireButton" destination="Jj5-4C-muE" id="usa-Hc-PpW"/>
                         <outlet property="knobPlaceholder" destination="zym-iF-GaD" id="VYW-e9-j2z"/>
+                        <outlet property="musicButton" destination="DrR-ON-Yan" id="KnR-cE-orq"/>
+                        <outlet property="stormButton" destination="rhs-7b-faF" id="AdH-X6-ljG"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -8,11 +8,46 @@
 
 import UIKit
 
+enum Control {
+    case storm
+    case fire
+    case music
+}
+
 class ViewController: UIViewController {
 
     @IBOutlet weak var knobPlaceholder: UIView!
     
     var knob: Knob!
+    var activeControl: Control = Control.fire {
+        didSet {
+            updateUI()
+        }
+    }
+    
+    var stormVolume: Float = 0.5
+    var fireVolume: Float = 0.5
+    var musicVolume: Float = 0.5
+    
+    func updateUI() {
+        switch activeControl {
+        case Control.storm:
+            stormButton.tintColor = .red
+            fireButton.tintColor = .black
+            musicButton.tintColor = .black
+            knob.value = stormVolume
+        case Control.fire:
+            stormButton.tintColor = .black
+            fireButton.tintColor = .red
+            musicButton.tintColor = .black
+            knob.value = fireVolume
+        case Control.music:
+            stormButton.tintColor = .black
+            fireButton.tintColor = .black
+            musicButton.tintColor = .red
+            knob.value = musicVolume
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,13 +58,34 @@ class ViewController: UIViewController {
         knobPlaceholder.addSubview(knob)
         
         view.tintColor = UIColor.red
+        updateUI()
         
-        knob.value = 0.5
     }
     
     @objc func knobValueChanged(knob: Knob) {
-        print(knob.value)
+        switch activeControl {
+        case Control.storm:
+            stormVolume = knob.value
+        case Control.fire:
+            fireVolume = knob.value
+        case Control.music:
+            musicVolume = knob.value
+        }
     }
+        
+    @IBOutlet weak var stormButton: UIButton!
+    @IBAction func stormButtonPressed(_ sender: UIButton) {
+        activeControl = .storm
+    }
+    @IBOutlet weak var fireButton: UIButton!
+    @IBAction func fireButtonPressed(_ sender: UIButton) {
+        activeControl = .fire
+    }
+    @IBOutlet weak var musicButton: UIButton!
+    @IBAction func musicButtonPressed(_ sender: UIButton) {
+        activeControl = .music
+    }
+    
     
 }
 
