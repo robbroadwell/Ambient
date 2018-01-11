@@ -15,6 +15,9 @@
 		0E5BA422200483AC00D548CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E5BA420200483AC00D548CD /* LaunchScreen.storyboard */; };
 		0E5BA42D200483AC00D548CD /* nomadic_ambienceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5BA42C200483AC00D548CD /* nomadic_ambienceTests.swift */; };
 		0E5BA438200483AC00D548CD /* nomadic_ambienceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5BA437200483AC00D548CD /* nomadic_ambienceUITests.swift */; };
+		0EA60264200813D000237522 /* storm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0EA60261200813CF00237522 /* storm.mp3 */; };
+		0EA60265200813D000237522 /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0EA60262200813CF00237522 /* music.mp3 */; };
+		0EA60266200813D000237522 /* fire.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0EA60263200813D000237522 /* fire.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +52,9 @@
 		0E5BA433200483AC00D548CD /* nomadic-ambienceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "nomadic-ambienceUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E5BA437200483AC00D548CD /* nomadic_ambienceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nomadic_ambienceUITests.swift; sourceTree = "<group>"; };
 		0E5BA439200483AC00D548CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0EA60261200813CF00237522 /* storm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = storm.mp3; sourceTree = "<group>"; };
+		0EA60262200813CF00237522 /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
+		0EA60263200813D000237522 /* fire.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = fire.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +112,9 @@
 				0E5BA420200483AC00D548CD /* LaunchScreen.storyboard */,
 				0E5BA423200483AC00D548CD /* Info.plist */,
 				0E2526A02008028400696D23 /* Knob.swift */,
+				0EA60263200813D000237522 /* fire.mp3 */,
+				0EA60262200813CF00237522 /* music.mp3 */,
+				0EA60261200813CF00237522 /* storm.mp3 */,
 			);
 			path = "nomadic-ambience";
 			sourceTree = "<group>";
@@ -235,6 +244,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0EA60265200813D000237522 /* music.mp3 in Resources */,
+				0EA60264200813D000237522 /* storm.mp3 in Resources */,
+				0EA60266200813D000237522 /* fire.mp3 in Resources */,
 				0E5BA422200483AC00D548CD /* LaunchScreen.storyboard in Resources */,
 				0E5BA41F200483AC00D548CD /* Assets.xcassets in Resources */,
 				0E5BA41D200483AC00D548CD /* Main.storyboard in Resources */,
