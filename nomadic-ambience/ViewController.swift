@@ -145,9 +145,9 @@ class ViewController: UIViewController {
     }
     
     func stopAll() {
-        guard let storm = stormPlayer else { return }
-        guard let fire = firePlayer else { return }
-        guard let music = musicPlayer else { return }
+        guard let storm = stormPlayer,
+            let fire = firePlayer,
+            let music = musicPlayer else { return }
         
         storm.pause()
         fire.pause()
