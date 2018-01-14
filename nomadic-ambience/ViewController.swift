@@ -15,7 +15,7 @@ enum Control {
     case music
 }
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, Reviewable {
     
     var knob: Knob!
 
@@ -63,6 +63,10 @@ class ViewController: UIViewController {
         
         updateUI()
         playAll()
+        
+        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
+            self.review()
+        }
         
     }
     

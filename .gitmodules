@@ -1,0 +1,9 @@
+[submodule "Reviewable"]
+	path = Reviewable
+	url = git@github.com:robbroadwell/reviewable.git
+[submodule "Blur"]
+	path = Blur
+	url = git@github.com:robbroadwell/blur.git
+[submodule "RoundedCornerView"]
+	path = RoundedCornerView
+	url = git@github.com:robbroadwell/rounded-corner-view.git
