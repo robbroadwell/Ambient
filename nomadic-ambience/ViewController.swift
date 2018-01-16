@@ -64,9 +64,9 @@ class ViewController: UIViewController, Reviewable {
         updateUI()
         playAll()
         
-        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
-            self.review()
-        }
+//        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
+//            self.review()
+//        }
         
     }
     
