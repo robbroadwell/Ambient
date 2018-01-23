@@ -195,6 +195,7 @@ private class KnobRenderer {
         CATransaction.commit()
         
         self.backingPointerAngle = pointerAngle
+        updateTrackLayerPath()
     }
     
     var pointerLength: CGFloat = 0.0 {
@@ -209,9 +210,9 @@ private class KnobRenderer {
     
     func updateTrackLayerPath() {
         let arcCenter = CGPoint(x: trackLayer.bounds.width / 2.0, y: trackLayer.bounds.height / 2.0)
-        let offset = max(pointerLength, trackLayer.lineWidth / 2.0)
-        let radius = min(trackLayer.bounds.height, trackLayer.bounds.width) / 2.0 - offset;
-        trackLayer.path = UIBezierPath(arcCenter: arcCenter, radius: radius, startAngle: startAngle, endAngle: endAngle, clockwise: true).cgPath
+        let _ = max(pointerLength, trackLayer.lineWidth / 2.0) // "offset" now unused
+        let radius = min(trackLayer.bounds.height, trackLayer.bounds.width) / 2.0 - 2; //was - offset
+        trackLayer.path = UIBezierPath(arcCenter: arcCenter, radius: radius, startAngle: startAngle, endAngle: pointerAngle, clockwise: true).cgPath
     }
     
     func updatePointerLayerPath() {
@@ -226,7 +227,7 @@ private class KnobRenderer {
         pointerLayer.lineWidth = lineWidth
         
         updateTrackLayerPath()
-        updatePointerLayerPath()
+//        updatePointerLayerPath()
     }
     
     func update(bounds: CGRect) {
