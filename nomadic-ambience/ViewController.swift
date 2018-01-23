@@ -8,6 +8,7 @@
 
 import UIKit
 import AVFoundation
+import StoreKit
 
 enum Control {
     case storm
@@ -72,10 +73,18 @@ class ViewController: UIViewController, Reviewable {
         updateUI()
         playAll()
         
-//        DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 1) {
-//            self.review()
-//        }
-        
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        reviews()
+    }
+    
+    func reviews() {
+        if UserDefaults.standard.integer(forKey: "numberOfLaunches") > 5 {
+            DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3) {
+                SKStoreReviewController.requestReview()
+            }
+        }
     }
     
     func updateUI() {

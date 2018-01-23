@@ -16,9 +16,6 @@
 		0E5BA42D200483AC00D548CD /* nomadic_ambienceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5BA42C200483AC00D548CD /* nomadic_ambienceTests.swift */; };
 		0E5BA438200483AC00D548CD /* nomadic_ambienceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5BA437200483AC00D548CD /* nomadic_ambienceUITests.swift */; };
 		0E673290200DAD5B00016A5A /* RoundedCornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E67328F200DAD5B00016A5A /* RoundedCornerView.swift */; };
-		0E673294200DAD6600016A5A /* ReviewableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E673291200DAD6600016A5A /* ReviewableViewController.swift */; };
-		0E673295200DAD6600016A5A /* Reviewable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E673292200DAD6600016A5A /* Reviewable.swift */; };
-		0E673296200DAD6600016A5A /* Reviewable.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E673293200DAD6600016A5A /* Reviewable.storyboard */; };
 		0E673298200DAD6900016A5A /* Blurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E673297200DAD6800016A5A /* Blurable.swift */; };
 		0EA60264200813D000237522 /* storm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0EA60261200813CF00237522 /* storm.mp3 */; };
 		0EA60265200813D000237522 /* music.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0EA60262200813CF00237522 /* music.mp3 */; };
@@ -58,9 +55,6 @@
 		0E5BA437200483AC00D548CD /* nomadic_ambienceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nomadic_ambienceUITests.swift; sourceTree = "<group>"; };
 		0E5BA439200483AC00D548CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0E67328F200DAD5B00016A5A /* RoundedCornerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedCornerView.swift; sourceTree = "<group>"; };
-		0E673291200DAD6600016A5A /* ReviewableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReviewableViewController.swift; sourceTree = "<group>"; };
-		0E673292200DAD6600016A5A /* Reviewable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reviewable.swift; sourceTree = "<group>"; };
-		0E673293200DAD6600016A5A /* Reviewable.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Reviewable.storyboard; sourceTree = "<group>"; };
 		0E673297200DAD6800016A5A /* Blurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blurable.swift; sourceTree = "<group>"; };
 		0EA60261200813CF00237522 /* storm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = storm.mp3; sourceTree = "<group>"; };
 		0EA60262200813CF00237522 /* music.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = music.mp3; sourceTree = "<group>"; };
@@ -117,9 +111,6 @@
 			children = (
 				0E5BA417200483AC00D548CD /* AppDelegate.swift */,
 				0E673297200DAD6800016A5A /* Blurable.swift */,
-				0E673293200DAD6600016A5A /* Reviewable.storyboard */,
-				0E673292200DAD6600016A5A /* Reviewable.swift */,
-				0E673291200DAD6600016A5A /* ReviewableViewController.swift */,
 				0E67328F200DAD5B00016A5A /* RoundedCornerView.swift */,
 				0E5BA419200483AC00D548CD /* ViewController.swift */,
 				0E5BA41B200483AC00D548CD /* Main.storyboard */,
@@ -269,7 +260,6 @@
 				0EA60266200813D000237522 /* fire.mp3 in Resources */,
 				0E5BA422200483AC00D548CD /* LaunchScreen.storyboard in Resources */,
 				0E5BA41F200483AC00D548CD /* Assets.xcassets in Resources */,
-				0E673296200DAD6600016A5A /* Reviewable.storyboard in Resources */,
 				0E5BA41D200483AC00D548CD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -296,12 +286,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				0E5BA41A200483AC00D548CD /* ViewController.swift in Sources */,
-				0E673294200DAD6600016A5A /* ReviewableViewController.swift in Sources */,
 				0E2526A12008028400696D23 /* Knob.swift in Sources */,
 				0E5BA418200483AC00D548CD /* AppDelegate.swift in Sources */,
 				0E673298200DAD6900016A5A /* Blurable.swift in Sources */,
 				0E673290200DAD5B00016A5A /* RoundedCornerView.swift in Sources */,
-				0E673295200DAD6600016A5A /* Reviewable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
