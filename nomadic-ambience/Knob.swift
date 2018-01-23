@@ -179,7 +179,7 @@ private class KnobRenderer {
         CATransaction.setDisableActions(true)
         
         pointerLayer.transform = CATransform3DMakeRotation(pointerAngle, 0.0, 0.0, 0.1)
-        knobImage.transform = CGAffineTransform(rotationAngle: pointerAngle + CGFloat(M_PI_2))
+        knobImage.transform = CGAffineTransform(rotationAngle: pointerAngle + CGFloat(Double.pi / 2))
         
         if animated {
             let midAngle = (max(pointerAngle, self.pointerAngle) - min(pointerAngle, self.pointerAngle) ) / 2.0 + min(pointerAngle, self.pointerAngle)
