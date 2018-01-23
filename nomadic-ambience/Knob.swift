@@ -71,6 +71,7 @@ public class Knob: UIControl {
         super.init(frame: frame)
         
         createSublayers()
+        self.addSubview(knobRenderer.knobImage)
         
         let gr = RotationGestureRecognizer(target: self, action: #selector(handleRotation(sender:)))
         self.addGestureRecognizer(gr)
@@ -154,6 +155,8 @@ private class KnobRenderer {
     
     let trackLayer = CAShapeLayer()
     
+    let knobImage = UIImageView()
+    
     var startAngle: CGFloat = 0.0 {
         didSet { update() }
     }
@@ -176,6 +179,7 @@ private class KnobRenderer {
         CATransaction.setDisableActions(true)
         
         pointerLayer.transform = CATransform3DMakeRotation(pointerAngle, 0.0, 0.0, 0.1)
+        knobImage.transform = CGAffineTransform(rotationAngle: pointerAngle + CGFloat(M_PI_2))
         
         if animated {
             let midAngle = (max(pointerAngle, self.pointerAngle) - min(pointerAngle, self.pointerAngle) ) / 2.0 + min(pointerAngle, self.pointerAngle)
@@ -200,6 +204,7 @@ private class KnobRenderer {
     init() {
         trackLayer.fillColor = UIColor.clear.cgColor
         pointerLayer.fillColor = UIColor.clear.cgColor
+        knobImage.image = #imageLiteral(resourceName: "knob")
     }
     
     func updateTrackLayerPath() {
@@ -232,6 +237,9 @@ private class KnobRenderer {
         
         pointerLayer.bounds = bounds
         pointerLayer.position = position
+        
+        knobImage.bounds = bounds
+        knobImage.center = position
         
         update()
     }
