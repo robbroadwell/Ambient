@@ -19,54 +19,84 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="zym-iF-GaD" userLabel="Knob Placeholder">
-                                <rect key="frame" x="137" y="283" width="100" height="100"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <rect key="frame" x="87" y="233" width="200" height="200"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="100" id="ISu-sF-oRw"/>
-                                    <constraint firstAttribute="height" constant="100" id="gBa-r1-E8U"/>
+                                    <constraint firstAttribute="width" constant="200" id="ISu-sF-oRw"/>
+                                    <constraint firstAttribute="height" constant="200" id="gBa-r1-E8U"/>
                                 </constraints>
                             </view>
-                            <stackView opaque="NO" contentMode="scaleToFill" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="ul0-sg-WpQ">
-                                <rect key="frame" x="122" y="233" width="131" height="30"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="23" translatesAutoresizingMaskIntoConstraints="NO" id="ul0-sg-WpQ">
+                                <rect key="frame" x="127" y="158" width="121" height="25"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rhs-7b-faF">
-                                        <rect key="frame" x="0.0" y="0.0" width="40" height="30"/>
-                                        <state key="normal" title="storm"/>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rhs-7b-faF">
+                                        <rect key="frame" x="0.0" y="0.0" width="25" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="25" id="whB-mf-7nP"/>
+                                        </constraints>
+                                        <state key="normal" image="storm"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="imageContentMode">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="stormButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5gu-sI-rCu"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jj5-4C-muE">
-                                        <rect key="frame" x="50" y="0.0" width="30" height="30"/>
-                                        <state key="normal" title="fire"/>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jj5-4C-muE">
+                                        <rect key="frame" x="48" y="0.0" width="25" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="25" id="CKW-h7-Rzo"/>
+                                        </constraints>
+                                        <state key="normal" image="fire"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="imageContentMode">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="fireButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KN6-fP-bn9"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DrR-ON-Yan">
-                                        <rect key="frame" x="90" y="0.0" width="41" height="30"/>
-                                        <state key="normal" title="music"/>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DrR-ON-Yan">
+                                        <rect key="frame" x="96" y="0.0" width="25" height="25"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="25" id="VbU-qp-boE"/>
+                                        </constraints>
+                                        <state key="normal" image="music"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="imageContentMode">
+                                                <integer key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                         <connections>
                                             <action selector="musicButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="oNq-2v-Yk5"/>
                                         </connections>
                                     </button>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="mll-0e-eyP"/>
+                                </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A3y-eV-Qh3" userLabel="Play Button">
-                                <rect key="frame" x="163" y="393" width="49" height="30"/>
-                                <state key="normal" title="playing"/>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" adjustsImageWhenHighlighted="NO" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="A3y-eV-Qh3" userLabel="Play Button">
+                                <rect key="frame" x="163" y="463" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="GAK-Om-eb8"/>
+                                    <constraint firstAttribute="width" constant="50" id="iGo-go-QCC"/>
+                                </constraints>
+                                <state key="normal" image="ic_play_circle_filled"/>
                                 <connections>
                                     <action selector="playButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tMd-jy-rxQ"/>
                                 </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.18431372549019609" green="0.17254901960784313" blue="0.19607843137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="A3y-eV-Qh3" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="AUS-Tf-GOY"/>
-                            <constraint firstItem="zym-iF-GaD" firstAttribute="top" secondItem="ul0-sg-WpQ" secondAttribute="bottom" constant="20" id="Jym-gr-Q0Y"/>
+                            <constraint firstItem="zym-iF-GaD" firstAttribute="top" secondItem="ul0-sg-WpQ" secondAttribute="bottom" constant="50" id="Jym-gr-Q0Y"/>
                             <constraint firstItem="zym-iF-GaD" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Qbx-eY-KnT"/>
                             <constraint firstItem="ul0-sg-WpQ" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="db5-d3-tEL"/>
-                            <constraint firstItem="A3y-eV-Qh3" firstAttribute="top" secondItem="zym-iF-GaD" secondAttribute="bottom" constant="10" id="iLZ-qV-XQq"/>
+                            <constraint firstItem="A3y-eV-Qh3" firstAttribute="top" secondItem="zym-iF-GaD" secondAttribute="bottom" constant="30" id="iLZ-qV-XQq"/>
                             <constraint firstItem="zym-iF-GaD" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="qsY-nl-OZb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -81,6 +111,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="32.799999999999997" y="32.833583208395808"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="fire" width="28" height="36"/>
+        <image name="ic_play_circle_filled" width="72" height="72"/>
+        <image name="music" width="26" height="38"/>
+        <image name="storm" width="42" height="44"/>
+    </resources>
 </document>

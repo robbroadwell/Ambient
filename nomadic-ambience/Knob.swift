@@ -91,7 +91,7 @@ public class Knob: UIControl {
         knobRenderer.startAngle = -CGFloat(Double.pi * 11.0 / 8.0);
         knobRenderer.endAngle = CGFloat(Double.pi * 3.0 / 8.0);
         knobRenderer.pointerAngle = knobRenderer.startAngle;
-        knobRenderer.lineWidth = 2.0
+        knobRenderer.lineWidth = 5.0
         knobRenderer.pointerLength = 6.0
         
         layer.addSublayer(knobRenderer.trackLayer)
@@ -211,7 +211,7 @@ private class KnobRenderer {
     func updateTrackLayerPath() {
         let arcCenter = CGPoint(x: trackLayer.bounds.width / 2.0, y: trackLayer.bounds.height / 2.0)
         let _ = max(pointerLength, trackLayer.lineWidth / 2.0) // "offset" now unused
-        let radius = min(trackLayer.bounds.height, trackLayer.bounds.width) / 2.0 - 2; //was - offset
+        let radius = min(trackLayer.bounds.height, trackLayer.bounds.width) / 2.0 - 1; //was - offset
         trackLayer.path = UIBezierPath(arcCenter: arcCenter, radius: radius, startAngle: startAngle, endAngle: pointerAngle, clockwise: true).cgPath
     }
     

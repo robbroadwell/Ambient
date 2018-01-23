@@ -18,6 +18,9 @@ enum Control {
 class ViewController: UIViewController, Reviewable {
     
     var knob: Knob!
+    
+    let active = UIColor.init(red: 255/255, green: 229/255, blue: 255/255, alpha: 1)
+    let inactive = UIColor.init(red: 83/255, green: 83/255, blue: 83/255, alpha: 1)
 
     @IBOutlet weak var knobPlaceholder: UIView!
     
@@ -54,12 +57,17 @@ class ViewController: UIViewController, Reviewable {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        view.tintColor = UIColor.red
+        view.tintColor = UIColor.init(red: 255/255, green: 229/255, blue: 255/255, alpha: 1)
         
         knob = Knob(frame: knobPlaceholder.bounds)
         knob.addTarget(self, action: #selector(knobValueChanged(knob:)), for: .allEvents)
         knob.isUserInteractionEnabled = true
         knobPlaceholder.addSubview(knob)
+        
+        stormButton.imageView?.contentMode = .scaleAspectFit
+        fireButton.imageView?.contentMode = .scaleAspectFit
+        musicButton.imageView?.contentMode = .scaleAspectFit
+        playButton.imageView?.contentMode = .scaleAspectFit
         
         updateUI()
         playAll()
@@ -74,28 +82,28 @@ class ViewController: UIViewController, Reviewable {
         switch activeControl {
             
         case Control.storm:
-            stormButton.tintColor = .red
-            fireButton.tintColor = .black
-            musicButton.tintColor = .black
+            stormButton.tintColor = active
+            fireButton.tintColor = inactive
+            musicButton.tintColor = inactive
             knob.value = stormVolume
             
         case Control.fire:
-            stormButton.tintColor = .black
-            fireButton.tintColor = .red
-            musicButton.tintColor = .black
+            stormButton.tintColor = inactive
+            fireButton.tintColor = active
+            musicButton.tintColor = inactive
             knob.value = fireVolume
             
         case Control.music:
-            stormButton.tintColor = .black
-            fireButton.tintColor = .black
-            musicButton.tintColor = .red
+            stormButton.tintColor = inactive
+            fireButton.tintColor = inactive
+            musicButton.tintColor = active
             knob.value = musicVolume
         }
         
         if playing {
-            playButton.tintColor = .red
+            playButton.tintColor = active
         } else {
-            playButton.tintColor = .black
+            playButton.tintColor = inactive
         }
     }
     
