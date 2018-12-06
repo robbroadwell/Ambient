@@ -16,7 +16,7 @@ enum Control {
     case music
 }
 
-class ViewController: UIViewController, Reviewable {
+class ViewController: UIViewController {
     
     var knob: Knob!
     

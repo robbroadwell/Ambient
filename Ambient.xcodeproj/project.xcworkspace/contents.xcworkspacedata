@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:nomadic-ambience.xcodeproj">
+      location = "self:/Users/rob/Ambient/Ambient.xcodeproj">
    </FileRef>
 </Workspace>

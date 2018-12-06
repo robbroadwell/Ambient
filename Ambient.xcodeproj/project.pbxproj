@@ -13,8 +13,6 @@
 		0E5BA41D200483AC00D548CD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E5BA41B200483AC00D548CD /* Main.storyboard */; };
 		0E5BA41F200483AC00D548CD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0E5BA41E200483AC00D548CD /* Assets.xcassets */; };
 		0E5BA422200483AC00D548CD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0E5BA420200483AC00D548CD /* LaunchScreen.storyboard */; };
-		0E5BA42D200483AC00D548CD /* nomadic_ambienceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5BA42C200483AC00D548CD /* nomadic_ambienceTests.swift */; };
-		0E5BA438200483AC00D548CD /* nomadic_ambienceUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E5BA437200483AC00D548CD /* nomadic_ambienceUITests.swift */; };
 		0E673290200DAD5B00016A5A /* RoundedCornerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E67328F200DAD5B00016A5A /* RoundedCornerView.swift */; };
 		0E673298200DAD6900016A5A /* Blurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E673297200DAD6800016A5A /* Blurable.swift */; };
 		0EA60264200813D000237522 /* storm.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 0EA60261200813CF00237522 /* storm.mp3 */; };
@@ -41,19 +39,15 @@
 
 /* Begin PBXFileReference section */
 		0E2526A02008028400696D23 /* Knob.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Knob.swift; sourceTree = "<group>"; };
-		0E5BA414200483AC00D548CD /* nomadic-ambience.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "nomadic-ambience.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E5BA414200483AC00D548CD /* Ambient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Ambient.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E5BA417200483AC00D548CD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0E5BA419200483AC00D548CD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		0E5BA41C200483AC00D548CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0E5BA41E200483AC00D548CD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0E5BA421200483AC00D548CD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0E5BA423200483AC00D548CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0E5BA428200483AC00D548CD /* nomadic-ambienceTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "nomadic-ambienceTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0E5BA42C200483AC00D548CD /* nomadic_ambienceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nomadic_ambienceTests.swift; sourceTree = "<group>"; };
-		0E5BA42E200483AC00D548CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0E5BA433200483AC00D548CD /* nomadic-ambienceUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "nomadic-ambienceUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0E5BA437200483AC00D548CD /* nomadic_ambienceUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = nomadic_ambienceUITests.swift; sourceTree = "<group>"; };
-		0E5BA439200483AC00D548CD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0E5BA428200483AC00D548CD /* AmbientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmbientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0E5BA433200483AC00D548CD /* AmbientUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AmbientUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0E67328F200DAD5B00016A5A /* RoundedCornerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedCornerView.swift; sourceTree = "<group>"; };
 		0E673297200DAD6800016A5A /* Blurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Blurable.swift; sourceTree = "<group>"; };
 		0EA60261200813CF00237522 /* storm.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = storm.mp3; sourceTree = "<group>"; };
@@ -89,9 +83,7 @@
 		0E5BA40B200483AC00D548CD = {
 			isa = PBXGroup;
 			children = (
-				0E5BA416200483AC00D548CD /* nomadic-ambience */,
-				0E5BA42B200483AC00D548CD /* nomadic-ambienceTests */,
-				0E5BA436200483AC00D548CD /* nomadic-ambienceUITests */,
+				0E5BA416200483AC00D548CD /* Ambient */,
 				0E5BA415200483AC00D548CD /* Products */,
 			);
 			sourceTree = "<group>";
@@ -99,14 +91,14 @@
 		0E5BA415200483AC00D548CD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0E5BA414200483AC00D548CD /* nomadic-ambience.app */,
-				0E5BA428200483AC00D548CD /* nomadic-ambienceTests.xctest */,
-				0E5BA433200483AC00D548CD /* nomadic-ambienceUITests.xctest */,
+				0E5BA414200483AC00D548CD /* Ambient.app */,
+				0E5BA428200483AC00D548CD /* AmbientTests.xctest */,
+				0E5BA433200483AC00D548CD /* AmbientUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		0E5BA416200483AC00D548CD /* nomadic-ambience */ = {
+		0E5BA416200483AC00D548CD /* Ambient */ = {
 			isa = PBXGroup;
 			children = (
 				0E5BA417200483AC00D548CD /* AppDelegate.swift */,
@@ -122,33 +114,15 @@
 				0EA60262200813CF00237522 /* music.mp3 */,
 				0EA60261200813CF00237522 /* storm.mp3 */,
 			);
-			path = "nomadic-ambience";
-			sourceTree = "<group>";
-		};
-		0E5BA42B200483AC00D548CD /* nomadic-ambienceTests */ = {
-			isa = PBXGroup;
-			children = (
-				0E5BA42C200483AC00D548CD /* nomadic_ambienceTests.swift */,
-				0E5BA42E200483AC00D548CD /* Info.plist */,
-			);
-			path = "nomadic-ambienceTests";
-			sourceTree = "<group>";
-		};
-		0E5BA436200483AC00D548CD /* nomadic-ambienceUITests */ = {
-			isa = PBXGroup;
-			children = (
-				0E5BA437200483AC00D548CD /* nomadic_ambienceUITests.swift */,
-				0E5BA439200483AC00D548CD /* Info.plist */,
-			);
-			path = "nomadic-ambienceUITests";
+			path = Ambient;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		0E5BA413200483AC00D548CD /* nomadic-ambience */ = {
+		0E5BA413200483AC00D548CD /* Ambient */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0E5BA43C200483AC00D548CD /* Build configuration list for PBXNativeTarget "nomadic-ambience" */;
+			buildConfigurationList = 0E5BA43C200483AC00D548CD /* Build configuration list for PBXNativeTarget "Ambient" */;
 			buildPhases = (
 				0E5BA410200483AC00D548CD /* Sources */,
 				0E5BA411200483AC00D548CD /* Frameworks */,
@@ -158,14 +132,14 @@
 			);
 			dependencies = (
 			);
-			name = "nomadic-ambience";
+			name = Ambient;
 			productName = "nomadic-ambience";
-			productReference = 0E5BA414200483AC00D548CD /* nomadic-ambience.app */;
+			productReference = 0E5BA414200483AC00D548CD /* Ambient.app */;
 			productType = "com.apple.product-type.application";
 		};
-		0E5BA427200483AC00D548CD /* nomadic-ambienceTests */ = {
+		0E5BA427200483AC00D548CD /* AmbientTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0E5BA43F200483AC00D548CD /* Build configuration list for PBXNativeTarget "nomadic-ambienceTests" */;
+			buildConfigurationList = 0E5BA43F200483AC00D548CD /* Build configuration list for PBXNativeTarget "AmbientTests" */;
 			buildPhases = (
 				0E5BA424200483AC00D548CD /* Sources */,
 				0E5BA425200483AC00D548CD /* Frameworks */,
@@ -176,14 +150,14 @@
 			dependencies = (
 				0E5BA42A200483AC00D548CD /* PBXTargetDependency */,
 			);
-			name = "nomadic-ambienceTests";
+			name = AmbientTests;
 			productName = "nomadic-ambienceTests";
-			productReference = 0E5BA428200483AC00D548CD /* nomadic-ambienceTests.xctest */;
+			productReference = 0E5BA428200483AC00D548CD /* AmbientTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		0E5BA432200483AC00D548CD /* nomadic-ambienceUITests */ = {
+		0E5BA432200483AC00D548CD /* AmbientUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0E5BA442200483AC00D548CD /* Build configuration list for PBXNativeTarget "nomadic-ambienceUITests" */;
+			buildConfigurationList = 0E5BA442200483AC00D548CD /* Build configuration list for PBXNativeTarget "AmbientUITests" */;
 			buildPhases = (
 				0E5BA42F200483AC00D548CD /* Sources */,
 				0E5BA430200483AC00D548CD /* Frameworks */,
@@ -194,9 +168,9 @@
 			dependencies = (
 				0E5BA435200483AC00D548CD /* PBXTargetDependency */,
 			);
-			name = "nomadic-ambienceUITests";
+			name = AmbientUITests;
 			productName = "nomadic-ambienceUITests";
-			productReference = 0E5BA433200483AC00D548CD /* nomadic-ambienceUITests.xctest */;
+			productReference = 0E5BA433200483AC00D548CD /* AmbientUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
@@ -211,7 +185,7 @@
 				TargetAttributes = {
 					0E5BA413200483AC00D548CD = {
 						CreatedOnToolsVersion = 9.2;
-						ProvisioningStyle = Manual;
+						ProvisioningStyle = Automatic;
 						SystemCapabilities = {
 							com.apple.BackgroundModes = {
 								enabled = 1;
@@ -230,7 +204,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 0E5BA40F200483AC00D548CD /* Build configuration list for PBXProject "nomadic-ambience" */;
+			buildConfigurationList = 0E5BA40F200483AC00D548CD /* Build configuration list for PBXProject "Ambient" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -243,9 +217,9 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0E5BA413200483AC00D548CD /* nomadic-ambience */,
-				0E5BA427200483AC00D548CD /* nomadic-ambienceTests */,
-				0E5BA432200483AC00D548CD /* nomadic-ambienceUITests */,
+				0E5BA413200483AC00D548CD /* Ambient */,
+				0E5BA427200483AC00D548CD /* AmbientTests */,
+				0E5BA432200483AC00D548CD /* AmbientUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -297,7 +271,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E5BA42D200483AC00D548CD /* nomadic_ambienceTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -305,7 +278,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0E5BA438200483AC00D548CD /* nomadic_ambienceUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,12 +286,12 @@
 /* Begin PBXTargetDependency section */
 		0E5BA42A200483AC00D548CD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0E5BA413200483AC00D548CD /* nomadic-ambience */;
+			target = 0E5BA413200483AC00D548CD /* Ambient */;
 			targetProxy = 0E5BA429200483AC00D548CD /* PBXContainerItemProxy */;
 		};
 		0E5BA435200483AC00D548CD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0E5BA413200483AC00D548CD /* nomadic-ambience */;
+			target = 0E5BA413200483AC00D548CD /* Ambient */;
 			targetProxy = 0E5BA434200483AC00D548CD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -455,15 +427,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 425S6F2787;
-				INFOPLIST_FILE = "nomadic-ambience/Info.plist";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/Ambient/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.jetlag.ambient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "62d2ae02-ca4d-47d8-91d2-517e2d7c8ddd";
-				PROVISIONING_PROFILE_SPECIFIER = "Ambient Distribution";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -473,15 +446,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
-				DEVELOPMENT_TEAM = 425S6F2787;
-				INFOPLIST_FILE = "nomadic-ambience/Info.plist";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "$(SRCROOT)/Ambient/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = io.jetlag.ambient;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "62d2ae02-ca4d-47d8-91d2-517e2d7c8ddd";
-				PROVISIONING_PROFILE_SPECIFIER = "Ambient Distribution";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -500,7 +474,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/nomadic-ambience.app/nomadic-ambience";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ambient.app/Ambient";
 			};
 			name = Debug;
 		};
@@ -517,7 +491,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/nomadic-ambience.app/nomadic-ambience";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Ambient.app/Ambient";
 			};
 			name = Release;
 		};
@@ -556,7 +530,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		0E5BA40F200483AC00D548CD /* Build configuration list for PBXProject "nomadic-ambience" */ = {
+		0E5BA40F200483AC00D548CD /* Build configuration list for PBXProject "Ambient" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0E5BA43A200483AC00D548CD /* Debug */,
@@ -565,7 +539,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0E5BA43C200483AC00D548CD /* Build configuration list for PBXNativeTarget "nomadic-ambience" */ = {
+		0E5BA43C200483AC00D548CD /* Build configuration list for PBXNativeTarget "Ambient" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0E5BA43D200483AC00D548CD /* Debug */,
@@ -574,7 +548,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0E5BA43F200483AC00D548CD /* Build configuration list for PBXNativeTarget "nomadic-ambienceTests" */ = {
+		0E5BA43F200483AC00D548CD /* Build configuration list for PBXNativeTarget "AmbientTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0E5BA440200483AC00D548CD /* Debug */,
@@ -583,7 +557,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0E5BA442200483AC00D548CD /* Build configuration list for PBXNativeTarget "nomadic-ambienceUITests" */ = {
+		0E5BA442200483AC00D548CD /* Build configuration list for PBXNativeTarget "AmbientUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0E5BA443200483AC00D548CD /* Debug */,
